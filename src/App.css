@@ -9,3 +9,6 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
+.movieList{
+    margin-top: -200px;
+}
