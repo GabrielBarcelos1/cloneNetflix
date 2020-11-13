@@ -33,7 +33,7 @@ function FeaturedMovie({item}){
                     <a href={`/list/add/${item.id}`} className="featured--mylistbutton">+ Minha Lista</a>
 
                 </div>
-                 <div className="featured--genres"><strong>Gênero:</strong>{genres.join(', ')}</div>
+                 <div className="featured--genres"><strong>Gênero:</strong>{genres.join(', ')}</div> 
                 </div>
             </div>
         </section>
