@@ -1,12 +1,14 @@
 import {useEffect, useState} from 'react'
 import Api from './services/TmdbApi'
-import MovieRow from './components/MovieRow'
-import FeaturedMovie from './components/FeaturedMovie'
+import MovieRow from './components/movieRow/MovieRow'
+import FeaturedMovie from './components/featuredMovie/FeaturedMovie'
 import './App.css'
+import Header from './components/header/Header'
 
 function App() {
   const [movieList, setMovieList] = useState([])
   const [featuredData, setFeaturedData] = useState(null)
+  const [blackHeader, setBlackHeader] = useState(false)
 
   useEffect(()=>{
     const loadAll = async ()=>{
@@ -21,8 +23,27 @@ function App() {
     }
     loadAll()
   },[])
+
+
+  useEffect(()=>{
+    const scrollListener = ()=>{
+      if(window.scrollY > 10 ){
+        setBlackHeader(true)
+      }else{
+        setBlackHeader(false)
+      }
+    }
+    window.addEventListener('scroll', scrollListener )
+
+    return ()=>{
+      window.removeEventListener('scroll', scrollListener)
+    }
+  },[])
   return (
     <div className="Page">
+      <Header
+        black={blackHeader}
+      />
       {featuredData &&
         <FeaturedMovie 
           item={featuredData}
@@ -37,6 +58,14 @@ function App() {
             />
         })}
       </section>
+      <footer>
+        <p>Feito com <span role="img" aria-label="coração">❤</span> Por Gabriel Vieira</p>
+      </footer>
+        {movieList.length<=0 &&
+      <div className="loading">
+        <img src="https://www.filmelier.com/pt/br/news/wp-content/uploads/2020/03/Netflix_LoadTime-scaled.gif" alt="Carregando"/>
+      </div>
+      }
     </div>
   );
 }
