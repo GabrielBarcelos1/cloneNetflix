@@ -43,7 +43,7 @@ Site hospedado: https://lnkd.in/eep9Bxx
 
 ## 🌐 Frontend
 <h1 align="center">
-    <img  src="https://github.com/GabrielBarcelos1/cloneNetflix/blob/main/2020-11-13%2019-04-39%20(1).mp4" />
+    <img  src="https://media.giphy.com/media/aD4wCUBGqptIjyTOng/giphy.gif" />
 </h1>
 
     
