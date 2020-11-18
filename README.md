@@ -37,7 +37,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Css3]()
 
 ## 💻 Projeto
-O clone do Netflix foi um projeto que decidi fazer para praticar técnicas de desenvolvimento com React, o foco foi total na beleza e nas animações do site, consequentemente nesse projeto também trabalhei toda a parte de componentização, responsividade, hooks e consumo de api externas, o maior aprendizado que tirei desse projeto foi algumas formas de interações com o usuário que não conhecia ainda
+O clone do Netflix foi um projeto que decidi fazer para praticar técnicas de desenvolvimento com React, o foco foi total na beleza e nas animações do site, consequentemente nesse projeto também trabalhei toda a parte de componentização, responsividade, hooks e consumo de api externas, o maior aprendizado que tirei desse projeto foi algumas formas de interações com o usuário que não conhecia ainda <br>
 Site hospedado: https://netlixclone.herokuapp.com/
 
 
